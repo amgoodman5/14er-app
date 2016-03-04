@@ -1,0 +1,9 @@
+{
+  "firebase": "14ers",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

@@ -1,4 +1,21 @@
 <div ng-controller="14erIndexController">
+  <table class="search table-responsive">
+    <thead>
+      <th class="searchInput">
+        <label>Search by name: </label>
+        <input ng-model="search" type="text" placeholder="Search">
+      </th>
+      <th>
+        <label>Sort by: </label>
+        <select ng-model="sortBy">
+        <option value="class">Difficulty</option>
+        <option value="name">Name</option>
+        <option value="-elevation">Elevation</option>
+        </select>
+      </th>
+    </thead>
+  </table>
+  <h2 class="text-center">All 14ers</h2>
   <table class="table-bordered table-responsive table-hover">
     <thead>
       <th>Class</th>
@@ -6,7 +23,7 @@
       <th>Elevation</th>
       <th>Range</th>
     </thead>
-    <tr ng-repeat="fourteener in fourteener_collection">
+    <tr ng-repeat="fourteener in fourteener_collection | filter: search | orderBy: sortBy">
       <td>{{fourteener.class}}</td>
       <td><a href="/14ers/{{fourteener.id}}">{{fourteener.name}}</a></td>
       <td>{{fourteener.elevation}}</td>

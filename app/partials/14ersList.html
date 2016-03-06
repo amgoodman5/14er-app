@@ -1,9 +1,16 @@
-Here are all the 14ers:
-
-
 <div ng-controller="14erIndexController">
-  <div ng-repeat="fourteener in fourteener_collection">
-     {{fourteener.name}}
-     <img src="{{fourteener.image}}">
-  </div>
+  <table class="table-bordered table-responsive table-hover">
+    <thead>
+      <th>Class</th>
+      <th>Name</th>
+      <th>Elevation</th>
+      <th>Range</th>
+    </thead>
+    <tr ng-repeat="fourteener in fourteener_collection">
+      <td>{{fourteener.class}}</td>
+      <td><a href="/14ers/{{fourteener.id}}">{{fourteener.name}}</a></td>
+      <td>{{fourteener.elevation}}</td>
+      <td>{{fourteener.range}}</td>
+    </tr>
+  </table>
 </div>

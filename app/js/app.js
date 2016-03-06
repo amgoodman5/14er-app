@@ -11,7 +11,7 @@ app.config(function($routeProvider, $locationProvider) {
         controller: '14erIndexController'
       })
       .when('/14ers/:id', {
-        templateUrl: 'partials/14ersShow.html',
+        templateUrl: '/partials/14ersShow.html',
         controller: '14erShowController'
       })
 
@@ -19,5 +19,5 @@ app.config(function($routeProvider, $locationProvider) {
     enabled: true,
     requireBase: false
   });
-  
+
 });

@@ -1,3 +1,15 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 50px; /* bottom = footer height */
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 table {
   margin: 0 auto;
   font-size: 1.5rem;
@@ -7,9 +19,36 @@ th, td {
   padding: 1rem;
 }
 
+button {
+  width: 100%;
+}
+
+button.show {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.splashMain {
+  height: 78vh;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.splashImg {
+  width: 400px;
+  height: auto;
+  margin: -50px auto;
+}
+
+.btn {
+  background-color: #8AD5DD;
+  color: white;
+}
+
 .showContainer {
   margin: 0 auto;
   padding-top: 2rem;
+  width: 50%;
 }
 
 .showImg {
@@ -21,4 +60,16 @@ th, td {
 .description {
   width: 500px;
   margin: 0 auto;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
 }

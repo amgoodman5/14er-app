@@ -2,15 +2,14 @@
   <table class="search table-responsive">
     <thead>
       <th class="searchInput">
-        <label>Search by name: </label>
-        <input ng-model="search" type="text" placeholder="Search">
+        <input class="form-control" ng-model="search" type="text" placeholder="Search by name">
       </th>
       <th>
-        <label>Sort by: </label>
-        <select ng-model="sortBy">
+        <select class="form-control" ng-model="sortBy" ng-init="sortBy='-elevation'">
         <option value="class">Difficulty</option>
-        <option value="name">Name</option>
         <option value="-elevation">Elevation</option>
+        <option value="name">Name</option>
+        <option value="range">Range</option>
         </select>
       </th>
     </thead>
@@ -30,4 +29,6 @@
       <td>{{fourteener.range}}</td>
     </tr>
   </table>
+  <br>
+  <br>
 </div>

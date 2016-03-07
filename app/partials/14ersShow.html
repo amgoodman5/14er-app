@@ -3,12 +3,18 @@
   <br>
   <img class="showImg img-responsive" src="{{singleFourteener.image}}"></td>
   <br>
+  <strong>
   <p>Class: {{singleFourteener.class}} |
      Elevation: {{singleFourteener.elevation}} |
      Range: {{singleFourteener.range}} |
      Location: {{singleFourteener.location}}
   </p>
+  </strong>
   <br>
   <p class="description text-justify">{{singleFourteener.description}}</p>
-  <p><a href="/14ers/{{fourteener.id}}/trails">Trails</a></p>
+  <br>
+  <a href="/14ers/{{singleFourteener.id}}/trails"><button class="btn show">Trails</button></a>
+  <br>
+  <br>
+  <br>
 </div>

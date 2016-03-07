@@ -11,7 +11,7 @@ app.config(function($routeProvider, $locationProvider) {
         controller: '14erIndexController'
       })
       .when('/14ers/:id/trails', {
-        templateUrl: '/partials/Trails.html',
+        templateUrl: '/partials/trails.html',
         controller: 'TrailShowController'
       })
       .when('/14ers/:id', {

@@ -1,3 +1,6 @@
+app.controller("MainController", function($scope){
+});
+
 app.controller("14erIndexController", function($scope, fourteenerService){
   fourteenerService.getFourteeners().then(function(payload){
     $scope.fourteener_collection = payload.data;

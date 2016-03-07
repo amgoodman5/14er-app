@@ -1,7 +1,3 @@
-app.controller("MainController", function($scope, $http, fourteenerService){
-   // no instance variables here....
-});
-
 app.controller("14erIndexController", function($scope, fourteenerService){
   fourteenerService.getFourteeners().then(function(payload){
     $scope.fourteener_collection = payload.data;
@@ -17,5 +13,17 @@ app.controller("14erShowController", function($scope, fourteenerService, $routeP
   }, function(error){
     console.log("an error occurred");
   });
+});
 
+app.controller("TrailShowController", function($scope, fourteenerService, $routeParams){
+  the_id = $routeParams.id;
+  fourteenerService.getFourteener(the_id).then(function(payload){
+    fourteenerService.getTrails(the_id).then(function(payload2) {
+    $scope.trails = payload2.data;
+    $scope.singleFourteener = payload.data[0];
+    console.log(payload2.data);
+  }, function(error){
+    console.log("an error occurred");
+    });
+  });
 });

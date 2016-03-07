@@ -47,7 +47,6 @@ button.show {
 
 .showContainer {
   margin: 0 auto;
-  padding-top: 2rem;
   width: 50%;
 }
 
@@ -58,7 +57,7 @@ button.show {
 }
 
 .description {
-  width: 500px;
+  width: 70%;
   margin: 0 auto;
 }
 

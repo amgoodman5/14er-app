@@ -11,5 +11,10 @@ app.service("fourteenerService", function($http){
     return $http.get("https://api-14er.herokuapp.com/14ers/"+fourteener_id, {method: "jsonp"});
   }
 
+  fourteenerService.getTrails = function(fourteener_id){
+    return $http.get("http://localhost:3000/14ers/"+fourteener_id+"/trails");
+    return $http.get("https://api-14er.herokuapp.com/14ers/"+fourteener_id+"/trails", {method: "jsonp"});
+  }
+
   return fourteenerService;
 });

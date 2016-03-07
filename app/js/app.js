@@ -10,6 +10,10 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/14ersList.html',
         controller: '14erIndexController'
       })
+      .when('/14ers/:id/trails', {
+        templateUrl: '/partials/Trails.html',
+        controller: 'TrailShowController'
+      })
       .when('/14ers/:id', {
         templateUrl: '/partials/14ersShow.html',
         controller: '14erShowController'

@@ -6,6 +6,9 @@ The 14er app is a resource for people interested in hiking 14ers (mountain peaks
 * HTML
 * CSS
 * Bootstrap
+* JavaScript
 * AngularJS
 * Express
-* NodeJS
+* Node.js
+* PostgreSQL
+* Knex
